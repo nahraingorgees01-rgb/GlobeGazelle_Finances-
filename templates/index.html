@@ -1,6 +1,26 @@
 {% extends "base.html" %}
 {% block content %}
-    <h1>Travel Dashboard</h1>
-    <p>Welcome to your travel finance manager. Ready to plan your next trip?</p>
-    <p><a href="{{ url_for('calculator') }}">Click here to start calculating.</a></p>
+<div class="header-hero">
+    <h1 style="color: #5c67a3;">Welcome to the Travel Budgeter</h1>
+    <p>A simple Flask dashboard demonstrating smart travel tools.</p>
+</div>
+
+<div class="dashboard-grid">
+    <div class="card">
+        <h3>Converter</h3>
+        <p>Calculate your daily travel spending.</p>
+        <a href="{{ url_for('calculator') }}"><button class="btn-blue">Go to Tool →</button></a>
+    </div>
+    
+    <div class="card">
+        <h3>About Us</h3>
+        <p>Learn more about GlobeGazelle.</p>
+        <a href="{{ url_for('about') }}"><button class="btn-green">Read More →</button></a>
+    </div>
+</div>
+
+<div class="description-area">
+    <h2>Project Description</h2>
+    <p>This is a Flask application that implements custom logic to solve travel finance problems...</p>
+</div>
 {% endblock %}
