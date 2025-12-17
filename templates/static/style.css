@@ -1,0 +1,4 @@
+body { font-family: sans-serif; margin: 40px; line-height: 1.6; }
+nav { background: #f4f4f4; padding: 15px; border-radius: 5px; }
+nav a { margin: 0 10px; text-decoration: none; color: blue; }
+form { background: #eee; padding: 20px; display: inline-block; }
